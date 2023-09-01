@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* footer copyright */
+
+.foot {
+    display: flex;
+    height: 3vh;
+    justify-content: center;
+}
+
+.copy {
+    color: #F4EEEE;
+    font-family: 'Abel';
+}
+
+/* Scrolling Effect on click */
+
+html {
+    scroll-behavior: smooth;
+    background-color: grey;
+}
+
+.scroll {
+    display: flex;
+    float: right;
+    position: relative;
+    right: 5vw;
+    top: 25vh;
+    border-radius: 50%;
+    background-color: #252629;
+}
+
+.pageup {
+    padding-top: 2.49vh;
+    padding-bottom: 2.49vh;
+    padding-left: 3.28vh;
+    padding-right: 3.28vh;
+    text-decoration: none;
+    color: #F4EEEE;
+    font-weight: bolder;
+}
+
+/* Header part for social links */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    position: absolute;
+    margin-top: 8vh;
+}
+
+/* Text for follow me */
+
+.follow {
+    display: inline-flex;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+/* Links Icons */
+
+.links {
+    display: inline-flex;
+    gap: 1.3vh;
+    position: relative;
+    left: 0.7vh;
+    top: 0.35vh;
+}
+
+.icons {
+    display: flex;
+    width: 4vh;
+}
+
+/* Page 1 layout */
+
+.page1 {
+    display: block;
+    height: 100vh;
+    background-color: #F4EEEE;
+}
+
+/* Right Side for circular desktop image */
+
+.picture {
+    display: flex;
+    float: right;
+}
+
+/* Circles */
+
+.circle {
+    display: inline-flex;
+    height: 100vh;
+    width: 49vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Outer circle with Gradient animation */
+
+.circle1 {
+    display: flex;
+    position: absolute;
+    height: 74vh;
+    width: 72.8vh;
+    border-radius: 50%;
+    background: linear-gradient(to right, red, purple);
+    animation: colour 6s infinite linear;
+}
+
+.circle1sub {
+    display: inline;
+    position: absolute;
+    height: 73vh;
+    width: 73vh;
+    border-radius: 50%;
+    background-color: #F4EEEE;
+    overflow: hidden;
+}
+
+/* Middle circle with Gradient animation */
+
+.circle2 {
+    display: inline;
+    position: absolute;
+    height: 44.5vh;
+    width: 46vh;
+    border-radius: 50%;
+    animation: colour2 6s infinite linear;
+    background: linear-gradient(to right, red, purple);
+}
+
+.circle2sub {
+    display: inline;
+    position: absolute;
+    height: 45vh;
+    width: 45vh;
+    border-radius: 50%;
+    background-color: #F4EEEE;
+}
+
+/* Inner circle with Gradient animation */
+
+.circle3 {
+    display: inline;
+    position: absolute;
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    background-image: linear-gradient(270deg, red, purple);
+    animation: colour 6s infinite linear;
+}
+
+@keyframes colour2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes colour {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+
+}
+
+/* Desktop Image */
+
+.tarun {
+    display: flex;
+    height: 80.39vh;
+    border-radius: 28.3vh;
+    position: absolute;
+    rotate: 5deg;
+    top: 5.988vh;
+    z-index: 1;
+}
+
+.cirbor {
+    display: inline;
+    position: absolute;
+    height: 72.6vh;
+    width: 72.6vh;
+    border-radius: 50%;
+    border: 0.5vh solid purple;
+    z-index: 2;
+}
+
+/* Left Side for intro words */
+
+.title {
+    display: flex;
+    height: 100vh;
+    width: 49vw;
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text for intro */
+
+.tl {
+    font-size: 4rem;
+    font-family: 'Whisholder';
+    font-weight: lighter;
+}
+
+.mn {
+    font-size: 2.2rem;
+    font-weight: 80;
+}
+
+.sl {
+    font-size: 1.25rem;
+    letter-spacing: 5px;
+    font-family: 'Poiret One';
+}
+
+/* Intro Text Animation */
+
+.tl {
+    animation: size;
+    animation-duration: 2s;
+}
+
+.mn {
+    animation: size1;
+    animation-duration: 2s;
+}
+
+.sl {
+    animation: size2;
+    animation-duration: 2s;
+}
+
+@keyframes size {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 4.3rem;
+    }
+}
+
+@keyframes size1 {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 2.4rem;
+    }
+}
+
+@keyframes size2 {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 1.4rem;
+    }
+}
+
+/* Little Window to show the tools im familiar working with */
+
+.skills {
+    display: flex;
+    height: 48.5vh;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.tools {
+    display: flex;
+    gap: 6vh;
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.png {
+    display: flex;
+    gap: 15vh;
+}
+
+.png img {
+    width: 20vh;
+}
+
+/* A little big of Animation */
+
+.html:hover {
+    animation: rotate;
+    animation-duration: 2.2s;
+}
+
+.css:hover {
+    animation: rotate;
+    animation-duration: 2.2s;
+}
+
+.javascript:hover {
+    animation: rotate;
+    animation-duration: 2.2s;
+}
+
+.figma:hover {
+    animation: rotate;
+    animation-duration: 2.2s;
+}
+
+.webflow:hover {
+    animation: rotate;
+    animation-duration: 2.2s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Page 2 layout */
+
+.page2 {
+    display: flex;
+    height: 100vh;
+    background-color: #DFEEEA;
+}
+
+/* Left Side */
+
+.about {
+    display: flex;
+    height: 100vh;
+    width: 39vw;
+    float: left;
+    flex-direction: column;
+    gap: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Image */
+
+.image img {
+    display: flex;
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+    border: 2px solid #9D44C0;
+}
+
+/* Right Side */
+
+.description {
+    display: flex;
+    height: 90vh;
+    width: 59vw;
+    float: right;
+    gap: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title Box */
+
+.tit {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6.2vh;
+    font-weight: bold;
+    font-style: normal;
+    display: inline-flex;
+    position: relative;
+}
+
+/* Description */
+
+.desc {
+    display: flex;
+    width: 50vw;
+    position: relative;
+    float: left;
+    font-size: 1.2rem;
+    font-family: 'Abel', sans-serif;
+}
+
+/* Little window for contact details */
+
+.con {
+    display: block;
+    height: 48.5vh;
+    background-color: lightgray;
+}
+
+.detail {
+    display: flex;
+    position: relative;
+    height: 48.5vh;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-family: 'Poppins';
+}
+
+.phn {
+    font-family: 'Abel';
+}
