@@ -465,8 +465,9 @@ header {
 }
 
 @media (max-width: 1080px) {
-    html, body {
+    body {
         overflow-x: hidden;
+        position: absolute;
     }
     
     .head {
