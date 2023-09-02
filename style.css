@@ -464,7 +464,7 @@ header {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
     .head {
         margin-top: 7vh;
     }
@@ -575,7 +575,7 @@ header {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
     .head {
         margin-top: 8vh;
     }
