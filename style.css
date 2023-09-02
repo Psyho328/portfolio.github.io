@@ -208,17 +208,16 @@ header {
 
 .tl {
     animation: size;
-    animation-duration: 2.8s;
-}
+    animation-duration: 1.01s;
 
 .mn {
     animation: size1;
-    animation-duration: 2.8s;
+    animation-duration: 2.01s;
 }
 
 .sl {
     animation: size2;
-    animation-duration: 2.8s;
+    animation-duration: 2.01s;
 }
 
 /* Little Window to show the tools im familiar working with */
