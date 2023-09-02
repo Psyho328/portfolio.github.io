@@ -208,17 +208,17 @@ header {
 
 .tl {
     animation: size;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 .mn {
     animation: size1;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 .sl {
     animation: size2;
-    animation-duration: 2s;
+    animation-duration: 4s;
 }
 
 /* Little Window to show the tools im familiar working with */
@@ -508,15 +508,15 @@ header {
     }
 
     .tl {
-        font-size: 12vw;
+        font-size: 10vw;
     }
 
     .mn {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .sl {
-        font-size: 6vw
+        font-size: 4.5vw;
     }
 
     /* Circles */
@@ -663,5 +663,34 @@ header {
 
     .pageup {
         display: none;
+    }
+
+    @keyframes size {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 11vw;
+    }
+}
+
+@keyframes size1 {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 7vw;
+    }
+}
+
+@keyframes size2 {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 5vw;
     }
 }
