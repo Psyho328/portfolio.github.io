@@ -21,6 +21,7 @@
 html {
     scroll-behavior: smooth;
     background-color: grey;
+    overflow-x: hidden;
 }
 
 .scroll {
@@ -34,10 +35,10 @@ html {
 }
 
 .pageup {
-    padding-top: 2.49vh;
-    padding-bottom: 2.49vh;
-    padding-left: 3.28vh;
-    padding-right: 3.28vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
     text-decoration: none;
     color: #F4EEEE;
     font-weight: bolder;
@@ -84,19 +85,13 @@ header {
 .page1 {
     display: block;
     height: 100vh;
+    width: 100vw;
     background-color: #F4EEEE;
 }
 
 /* Right Side for circular desktop image */
 
 .picture {
-    display: flex;
-    float: right;
-}
-
-/* Circles */
-
-.circle {
     display: inline-flex;
     height: 100vh;
     width: 49vw;
@@ -104,13 +99,23 @@ header {
     align-items: center;
 }
 
+/* Circles */
+
+.circle {
+    display: flex;
+    width: 34vw;
+    height: 74vh;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Outer circle with Gradient animation */
 
 .circle1 {
     display: flex;
     position: absolute;
-    height: 74vh;
-    width: 72.8vh;
+    height: 35vw;
+    width: 33.9vw;
     border-radius: 50%;
     background: linear-gradient(to right, red, purple);
     animation: colour 6s infinite linear;
@@ -119,8 +124,8 @@ header {
 .circle1sub {
     display: inline;
     position: absolute;
-    height: 73vh;
-    width: 73vh;
+    height: 34vw;
+    width: 34vw;
     border-radius: 50%;
     background-color: #F4EEEE;
     overflow: hidden;
@@ -131,8 +136,8 @@ header {
 .circle2 {
     display: inline;
     position: absolute;
-    height: 44.5vh;
-    width: 46vh;
+    height: 22vw;
+    width: 20.9vw;
     border-radius: 50%;
     animation: colour2 6s infinite linear;
     background: linear-gradient(to right, red, purple);
@@ -141,8 +146,8 @@ header {
 .circle2sub {
     display: inline;
     position: absolute;
-    height: 45vh;
-    width: 45vh;
+    height: 21vw;
+    width: 21vw;
     border-radius: 50%;
     background-color: #F4EEEE;
 }
@@ -152,55 +157,20 @@ header {
 .circle3 {
     display: inline;
     position: absolute;
-    height: 25vh;
-    width: 25vh;
+    height: 12vw;
+    width: 12vw;
     border-radius: 50%;
     background-image: linear-gradient(270deg, red, purple);
     animation: colour 6s infinite linear;
-}
-
-@keyframes colour2 {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-
-}
-
-@keyframes colour {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(-360deg);
-    }
-
 }
 
 /* Desktop Image */
 
 .tarun {
     display: flex;
-    height: 80.39vh;
-    border-radius: 28.3vh;
-    position: absolute;
-    rotate: 5deg;
-    top: 5.988vh;
-    z-index: 1;
-}
-
-.cirbor {
-    display: inline;
-    position: absolute;
-    height: 72.6vh;
-    width: 72.6vh;
+    height: 34vw;
     border-radius: 50%;
-    border: 0.5vh solid purple;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* Left Side for intro words */
@@ -251,36 +221,6 @@ header {
     animation-duration: 2s;
 }
 
-@keyframes size {
-    0% {
-        font-size: 0;
-    }
-
-    100% {
-        font-size: 4.3rem;
-    }
-}
-
-@keyframes size1 {
-    0% {
-        font-size: 0;
-    }
-
-    100% {
-        font-size: 2.4rem;
-    }
-}
-
-@keyframes size2 {
-    0% {
-        font-size: 0;
-    }
-
-    100% {
-        font-size: 1.4rem;
-    }
-}
-
 /* Little Window to show the tools im familiar working with */
 
 .skills {
@@ -302,18 +242,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2vh;
+    gap: 1rem;
     font-family: 'Roboto', sans-serif;
 
 }
 
 .png {
     display: flex;
-    gap: 15vh;
+    gap: 7vw;
 }
 
 .png img {
-    width: 20vh;
+    width: 10vw;
 }
 
 /* A little big of Animation */
@@ -343,16 +283,6 @@ header {
     animation-duration: 2.2s;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
 /* Page 2 layout */
 
 .page2 {
@@ -374,14 +304,33 @@ header {
     align-items: center;
 }
 
-/* Profile Image */
+/* Profile Image with gradient animation */
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .image img {
     display: flex;
+    position: absolute;
     height: 35vh;
     width: 35vh;
     border-radius: 50%;
-    border: 2px solid #9D44C0;
+    z-index: 3;
+}
+
+.cirbor {
+    display: flex;
+    position: absolute;
+    height: 36.5vh;
+    width: 36.5vh;
+    border-radius: 50%;
+    rotate: 90deg;
+    background: linear-gradient(red, purple);
+    z-index: 2;
+    animation: colour 5s infinite linear;
 }
 
 /* Right Side */
@@ -442,4 +391,259 @@ header {
 
 .phn {
     font-family: 'Abel';
+}
+
+
+/* KEYFRAMES ANIMATION */
+
+/* Intro Text Animation */
+
+@keyframes size {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 4.3rem;
+    }
+}
+
+@keyframes size1 {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 2.4rem;
+    }
+}
+
+@keyframes size2 {
+    0% {
+        font-size: 0;
+    }
+
+    100% {
+        font-size: 1.4rem;
+    }
+}
+
+/* Circle Animation */
+
+@keyframes colour2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes colour {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+
+}
+
+/* Tools animation */
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@media (max-width: 900px) {
+    .head {
+        margin-top: 7vh;
+    }
+
+    .follow {
+        font-size: 4.6vh;
+    }
+
+    .icons {
+        width: 4.6vh;
+    }
+
+    .picture {
+        display: inline-flex;
+        height: 55vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        display: flex;
+        height: 45vh;
+        width: 100vw;
+        float: left;
+        flex-direction: column;
+        position: relative;
+        top: 21vh;
+        justify-content: unset;
+    }
+
+    /* Circles */
+
+    .circle {
+        display: flex;
+        width: 34vw;
+        height: 74vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Outer circle with Gradient animation */
+
+    .circle1 {
+        display: flex;
+        position: absolute;
+        height: 44vh;
+        width: 42.9vh;
+        border-radius: 50%;
+        background: linear-gradient(to right, red, purple);
+        animation: colour 6s infinite linear;
+    }
+
+    .circle1sub {
+        display: inline;
+        position: absolute;
+        height: 43vh;
+        width: 43vh;
+        border-radius: 50%;
+        background-color: #F4EEEE;
+        overflow: hidden;
+    }
+
+    /* Middle circle with Gradient animation */
+
+    .circle2 {
+        display: inline;
+        position: absolute;
+        height: 31vh;
+        width: 29.9vh;
+        border-radius: 50%;
+        animation: colour2 6s infinite linear;
+        background: linear-gradient(to right, red, purple);
+    }
+
+    .circle2sub {
+        display: inline;
+        position: absolute;
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;
+        background-color: #F4EEEE;
+    }
+
+    /* Inner circle with Gradient animation */
+
+    .circle3 {
+        display: inline;
+        position: absolute;
+        height: 21vh;
+        width: 21vh;
+        border-radius: 50%;
+        background-image: linear-gradient(270deg, red, purple);
+        animation: colour 6s infinite linear;
+    }
+
+    /* Desktop Image */
+
+    .tarun {
+        display: flex;
+        height: 43vh;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .skills {
+        height: 34vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .head {
+        margin-top: 8vh;
+    }
+
+    .follow {
+        font-size: 5vw;
+    }
+
+    .icons {
+        width: 5vw;
+    }
+
+    .title {
+        position: relative;
+        top: 21vh;
+        justify-content: unset;
+    }
+
+    .page2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        height: 50vw;
+        width: 100vw;
+        float: left;
+    }
+
+    .description {
+        display: flex;
+        height: 65vh;
+        width: 100vw;
+        float: right;
+        gap: 2vw;
+        justify-content: flex-start;
+    }
+
+    .image img {
+        height: 35vw;
+        width: 35vw;
+    }
+
+    .cirbor {
+        height: 36.5vw;
+        width: 36.5vw;
+    }
+
+    .tit {
+        font-size: 6.2vw;
+    }
+
+    .desc {
+        width: 70vw;
+        font-size: 1rem;
+    }
+
+    .skills {
+        height: 46vw;
+    }
+
+    .png img {
+        width: 14vw;
+    }
+
+    .png, .tools {
+        gap: 4vw;
+    }
 }
