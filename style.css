@@ -465,6 +465,10 @@ header {
 }
 
 @media (max-width: 1080px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    
     .head {
         margin-top: 7vh;
     }
