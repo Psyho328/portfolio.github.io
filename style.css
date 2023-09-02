@@ -470,11 +470,11 @@ header {
     }
 
     .follow {
-        font-size: 4.6vh;
+        font-size: 5vh;
     }
 
     .icons {
-        width: 4.6vh;
+        width: 5vh;
     }
 
     .picture {
@@ -572,26 +572,6 @@ header {
 
     .skills {
         height: 34vw;
-    }
-}
-
-@media (max-width: 1080px) {
-    .head {
-        margin-top: 8vh;
-    }
-
-    .follow {
-        font-size: 5vw;
-    }
-
-    .icons {
-        width: 5vw;
-    }
-
-    .title {
-        position: relative;
-        top: 21vh;
-        justify-content: unset;
     }
 
     .page2 {
