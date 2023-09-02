@@ -209,6 +209,7 @@ header {
 .tl {
     animation: size;
     animation-duration: 1.01s;
+}
 
 .mn {
     animation: size1;
