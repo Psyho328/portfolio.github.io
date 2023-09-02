@@ -475,11 +475,17 @@ header {
     }
 
     .follow {
-        font-size: 5vh;
+        font-size: 6vw;
     }
 
     .icons {
-        width: 5vh;
+        width: 6vw;
+    }
+
+    .links {
+        gap: 2vw;
+        left: 1.2vw;
+        top: 0.67vw;
     }
 
     .picture {
@@ -499,6 +505,18 @@ header {
         position: relative;
         top: 21vh;
         justify-content: unset;
+    }
+
+    .tl {
+        font-size: 12vw;
+    }
+
+    .mn {
+        font-size: 8vw;
+    }
+
+    .sl {
+        font-size: 6vw
     }
 
     /* Circles */
@@ -617,7 +635,12 @@ header {
 
     .desc {
         width: 70vw;
-        font-size: 1rem;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .con {
+        height: 46vw;
     }
 
     .skills {
@@ -630,5 +653,15 @@ header {
 
     .png, .tools {
         gap: 4vw;
+    }
+
+    .con {
+        height: 46vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pageup {
+        display: none;
     }
 }
