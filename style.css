@@ -23,13 +23,12 @@ html {
     background-color: grey;
     overflow-x: hidden;
 }
-
+/*
 .scroll {
     display: flex;
     float: right;
-    position: relative;
-    right: 5vw;
-    top: 25vh;
+    position: absolute;
+    right: 2vw;
     border-radius: 50%;
     background-color: #252629;
 }
@@ -43,6 +42,7 @@ html {
     color: #F4EEEE;
     font-weight: bolder;
 }
+*/
 
 /* Header part for social links */
 
@@ -371,18 +371,19 @@ header {
 /* Little window for contact details */
 
 .con {
-    display: block;
-    height: 48.5vh;
+    display: flex;
+    height: 60vh;
     background-color: lightgray;
+    align-items: center;
+    justify-content: center;
 }
 
-.detail {
+.details {
     display: flex;
-    position: relative;
-    height: 48.5vh;
-    width: 30vw;
-    justify-content: center;
-    align-items: center;
+    height: 36vh;
+    width: 92vw;
+    background-color: aqua;
+    z-index: 5;
 }
 
 .name {
@@ -469,7 +470,7 @@ header {
         overflow-x: hidden;
         position: absolute;
     }
-    
+
     .head {
         margin-top: 7vh;
     }
@@ -651,7 +652,8 @@ header {
         width: 14vw;
     }
 
-    .png, .tools {
+    .png,
+    .tools {
         gap: 4vw;
     }
 
@@ -665,32 +667,54 @@ header {
         display: none;
     }
 
+    .foot {
+        height: 1vh;
+    }
+
     @keyframes size {
-    0% {
-        font-size: 0;
+        0% {
+            font-size: 0;
+        }
+
+        100% {
+            font-size: 11vw;
+        }
     }
 
-    100% {
-        font-size: 11vw;
+    @keyframes size1 {
+        0% {
+            font-size: 0;
+        }
+
+        100% {
+            font-size: 7vw;
+        }
+    }
+
+    @keyframes size2 {
+        0% {
+            font-size: 0;
+        }
+
+        100% {
+            font-size: 5vw;
+        }
     }
 }
 
-@keyframes size1 {
-    0% {
-        font-size: 0;
-    }
-
-    100% {
-        font-size: 7vw;
-    }
+#image-track {
+    display: flex;
+    gap: 2vmin;
+    position: absolute;
+    left: 50%;
+    transform: translate(0%, 0%);
+    user-select: none;
+    /* -- Prevent image highlighting -- */
 }
 
-@keyframes size2 {
-    0% {
-        font-size: 0;
-    }
-
-    100% {
-        font-size: 5vw;
-    }
+#image-track>.image {
+    width: 25vmin;
+    height: 38vmin;
+    object-fit: cover;
+    object-position: 100% center;
 }
